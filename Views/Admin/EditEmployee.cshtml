@@ -1,0 +1,151 @@
+﻿@model Hospital_Information_System.Models.Admin.EmployeeModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SignUp Employee</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>EmployeeModel</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Cnic)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Cnic)
+                @Html.ValidationMessageFor(model => model.Cnic)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FullName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FullName)
+                @Html.ValidationMessageFor(model => model.FullName)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Gender)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Gender)
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Address)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Address)
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Email)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Birthdate)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Birthdate)
+                @Html.ValidationMessageFor(model => model.Birthdate)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.PhoneNo)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.PhoneNo)
+                @Html.ValidationMessageFor(model => model.PhoneNo)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Qualification)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Qualification)
+                @Html.ValidationMessageFor(model => model.Qualification)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Experience)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Experience)
+                @Html.ValidationMessageFor(model => model.Experience)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.AccountType)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.AccountType)
+                @Html.ValidationMessageFor(model => model.AccountType)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.JoiningDate)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.JoiningDate)
+                @Html.ValidationMessageFor(model => model.JoiningDate)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ImageURL)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.ImageURL)
+                @Html.ValidationMessageFor(model => model.ImageURL)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.UserName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserName)
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+    
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

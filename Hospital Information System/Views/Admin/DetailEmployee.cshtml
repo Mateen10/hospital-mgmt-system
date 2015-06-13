@@ -1,0 +1,121 @@
+﻿@model Hospital_Information_System.Models.Admin.EmployeeModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee Detail</title>
+</head>
+<body>
+    <fieldset>
+        <legend>EmployeeModel</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Cnic)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Cnic)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.FullName)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.FullName)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Gender)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Gender)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Address)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Address)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Email)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Email)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Birthdate)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Birthdate)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.PhoneNo)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.PhoneNo)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Qualification)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Qualification)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Experience)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Experience)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.AccountType)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.AccountType)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.JoiningDate)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.JoiningDate)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.ImageURL)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.ImageURL)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.UserName)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.UserName)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Password)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Password)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { Cnic=Model.Cnic}) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

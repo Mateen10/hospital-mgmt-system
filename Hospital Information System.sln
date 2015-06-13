@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital Information System", "Hospital Information System\Hospital Information System.csproj", "{47466668-0228-4EE0-AA95-6012A0F00CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital Information System Business", "Hospital Information System Business\Hospital Information System Business.csproj", "{27BCE9FA-2A07-44E1-987F-67FBC138DF8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47466668-0228-4EE0-AA95-6012A0F00CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47466668-0228-4EE0-AA95-6012A0F00CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47466668-0228-4EE0-AA95-6012A0F00CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47466668-0228-4EE0-AA95-6012A0F00CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BCE9FA-2A07-44E1-987F-67FBC138DF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BCE9FA-2A07-44E1-987F-67FBC138DF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BCE9FA-2A07-44E1-987F-67FBC138DF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BCE9FA-2A07-44E1-987F-67FBC138DF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
